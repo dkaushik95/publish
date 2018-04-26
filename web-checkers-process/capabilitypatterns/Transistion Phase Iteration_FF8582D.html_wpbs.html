@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Transistion Phase Iteration</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="Transistion Phase Iteration">
+<meta name="uma.presentationName" content="Transistion Phase Iteration">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_ONfJkUmZEei8Md6BW_mwcw&path=_ONfJkUmZEei8Md6BW_mwcw,_Uc4EAkmZEei8Md6BW_mwcw';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_Uc4EAkmZEei8Md6BW_mwcw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Transistion Phase Iteration</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../web-checkers-process/capabilitypatterns/Transistion Phase Iteration_FF8582D.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../web-checkers-process/capabilitypatterns/Transistion Phase Iteration_FF8582D.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../web-checkers-process/capabilitypatterns/Transistion Phase Iteration_FF8582D.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Product Usage</span></td><td width="21"><img src="./../../images/tab_end-a.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="6"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="1"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Product Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Product Breakdown", summary: "Work Product Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["entry_state", "Entry State"],
+["exit_state", "Exit State"],
+["deliverable", "Deliverable"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+			
+{id: "9a208718", parentId: "", relPath: ",_DBjAIUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_notebook", title: "Architecture Notebook", url: "./../../web-checkers-process/capabilitypatterns/architecture_notebook_D1CEE3AC.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e9dfba6b", parentId: "", relPath: ",_Uc3c_0mZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "black_box_test_document", title: "Black Box Test Document", url: "./../../web-checkers-process/capabilitypatterns/black_box_test_document_B4404BD3.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "96b65dae", parentId: "", relPath: ",_DCNugUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "build", title: "Build", url: "./../../web-checkers-process/capabilitypatterns/build_5868C19F.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e20912aa", parentId: "", relPath: ",_Uc4ECEmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "code_metrics", title: "Code Metrics", url: "./../../web-checkers-process/capabilitypatterns/code_metrics_9FE52845.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "3e9cfe2b", parentId: "", relPath: ",_DCO8oUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "design", title: "Design", url: "./../../web-checkers-process/capabilitypatterns/design_63005DF9.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e4f3bdbb", parentId: "", relPath: ",_Uc3c9EmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "design_documentation", title: "Design Documentation", url: "./../../web-checkers-process/capabilitypatterns/design_documentation_2487F14E.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "ea0ccdcf", parentId: "", relPath: ",_DCPjsUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "developer_test", title: "Developer Test", url: "./../../web-checkers-process/capabilitypatterns/developer_test_8830D486.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "4584ead6", parentId: "", relPath: ",_Uc4ECUmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "final_release", title: "Final Release", url: "./../../web-checkers-process/capabilitypatterns/final_release_AA830855.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e421aed5", parentId: "", relPath: ",_DCDWcUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "github_repository", title: "Github Repository", url: "./../../web-checkers-process/capabilitypatterns/github_repository_1FD764CF.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "93dfe19b", parentId: "", relPath: ",_DCQx0UmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "implementation", title: "Implementation", url: "./../../web-checkers-process/capabilitypatterns/implementation_3CF5D556.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "4adb44d1", parentId: "", relPath: ",_DBt_QUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "iteration_plan", title: "Iteration Plan", url: "./../../web-checkers-process/capabilitypatterns/iteration_plan_1CA7C8F8.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "eee214d3", parentId: "", relPath: ",_Uc3c-0mZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "presentation", title: "Presentation", url: "./../../web-checkers-process/capabilitypatterns/presentation_4FC221C5.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "f25bbfd9", parentId: "", relPath: ",_DBvNYUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "project_plan", title: "Project Plan", url: "./../../web-checkers-process/capabilitypatterns/project_plan_682A08DD.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e9076a2f", parentId: "", relPath: ",_Uc4EBkmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "readme_and_user_guide", title: "README and User Guide", url: "./../../web-checkers-process/capabilitypatterns/readme_and_user_guide_D48A3A4C.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "90c54def", parentId: "", relPath: ",_DCD9gUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "requirement_document", title: "Requirement Document", url: "./../../web-checkers-process/capabilitypatterns/requirement_document_182778AD.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e25dd1ee", parentId: "", relPath: ",_DBwbgUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "risk_list", title: "Risk List", url: "./../../web-checkers-process/capabilitypatterns/risk_list_2115E002.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "35d05e59", parentId: "", relPath: ",_DBk1UUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "slack_team", title: "Slack Team", url: "./../../web-checkers-process/capabilitypatterns/slack_team_15A1376F.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "92f0bba4", parentId: "", relPath: ",_Uc4EAUmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "software_design_diagrams", title: "Software Design Diagrams", url: "./../../web-checkers-process/capabilitypatterns/software_design_diagrams_215F4417.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "410ca1e2", parentId: "", relPath: ",_Uc3c-UmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "source_code", title: "Source Code", url: "./../../web-checkers-process/capabilitypatterns/source_code_F84F37EA.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "ed44db98", parentId: "", relPath: ",_Uc3c-EmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "sprint_demos", title: "Sprint Demos", url: "./../../web-checkers-process/capabilitypatterns/sprint_demos_EDB157DA.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "9257212e", parentId: "", relPath: ",_Uc3c_EmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "sprint_retrospectives", title: "Sprint Retrospectives", url: "./../../web-checkers-process/capabilitypatterns/sprint_retrospectives_522F81E8.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e9f526da", parentId: "", relPath: ",_DCFysUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "team_information", title: "Team Information", url: "./../../web-checkers-process/capabilitypatterns/team_information_88DA2F1F.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "9273d557", parentId: "", relPath: ",_DBmDcUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "technology_cheet_sheet", title: "Technology Cheet Sheet", url: "./../../web-checkers-process/capabilitypatterns/technology_cheet_sheet_E8848332.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "93e81432", parentId: "", relPath: ",_DCHA0UmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "technology_stack_guideline", title: "Technology Stack Guideline", url: "./../../web-checkers-process/capabilitypatterns/technology_stack_guideline_E8AA4B88.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "4b93d3e9", parentId: "", relPath: ",_DBYoEUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "test_case", title: "Test Case", url: "./../../web-checkers-process/capabilitypatterns/test_case_5265AF8F.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e711c376", parentId: "", relPath: ",_DBZ2MUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "test_log", title: "Test Log", url: "./../../web-checkers-process/capabilitypatterns/test_log_5CFD4BE9.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "39f80854", parentId: "", relPath: ",_DBadQUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "test_script", title: "Test Script", url: "./../../web-checkers-process/capabilitypatterns/test_script_EFF8C8B0.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "973db844", parentId: "", relPath: ",_DBnRkUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "trello_board", title: "Trello Board", url: "./../../web-checkers-process/capabilitypatterns/trello_board_3406C317.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "94ee4dcf", parentId: "", relPath: ",_Uc3c8kmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "unit_tests", title: "Unit Tests", url: "./../../web-checkers-process/capabilitypatterns/unit_tests_592D0355.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "e686e01e", parentId: "", relPath: ",_Uc3c-kmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "user_story", title: "User Story", url: "./../../web-checkers-process/capabilitypatterns/user_story_E6E84C00.html", 
+	predecessors: "", info: "Mandatory Input, Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "ea99a6bc", parentId: "", relPath: ",_Uc3c8EmZEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "version_release", title: "Version Release", url: "./../../web-checkers-process/capabilitypatterns/version_release_5FF60F2F.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+			
+{id: "43f256d3", parentId: "", relPath: ",_DBumUUmaEei8Md6BW_mwcw", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "work_items_list", title: "Work Items List", url: "./../../web-checkers-process/capabilitypatterns/work_items_list_55E28061.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>
